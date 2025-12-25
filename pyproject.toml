@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pipecat-awaazai"
+version = "0.1.0"
+description = "AwaazAI WebSocket frame serializer for Pipecat for hosting agents on telephony"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "AwaazAI Team"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "pipecat-ai[silero,websocket]",
+    "pydantic",
+    "python-dotenv",
+    "deepgram-sdk<4.0.0",
+    "uvicorn[standard]",
+]
+
+[project.urls]
+Homepage = "https://github.com/awaazde/pipecat-awaazai"
+Repository = "https://github.com/awaazde/pipecat-awaazai"
+Issues = "https://github.com/awaazde/pipecat-awaazai/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pipecat_awaazai"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/pyproject.toml",
+    "/README.md",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "flake8>=4.0.0",
+    "mypy>=1.0.0",
+]
