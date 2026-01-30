@@ -1,4 +1,4 @@
-# Pipecat AwaazAI TTS Integration
+# Pipecat AwaazAI Telephony Serializer Integration
 
 Host your Pipecat agents with [AwaazAI](https://www.awaaz.ai/) telephony stack.
 
