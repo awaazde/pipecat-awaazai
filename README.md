@@ -1,8 +1,8 @@
-# Pipecat AwaazAI Telephony Serializer Integration
+# Pipecat Awaaz AI Telephony Serializer Integration
 
-Host your Pipecat agents with [AwaazAI](https://www.awaaz.ai/) telephony stack.
+Host your Pipecat agents with [Awaaz AI](https://www.awaaz.ai/) telephony stack.
 
-**Maintainer:** AwaazAI
+**Maintainer:** Awaaz AI
 
 ## Installation
 
@@ -27,11 +27,11 @@ uv sync
 
 ## Prerequisites
 
-- Purchase a Phone number from AwaazAI  
+- Purchase a Phone number from Awaaz AI  
 
 ## Usage with Pipecat Pipeline
 
-`AwaazAIFrameSerializer` convert between frames and media streams, enabling real-time communication over a websocket to host agent over AwaazAI's telephony stack over an indian phone number
+`AwaazAIFrameSerializer` convert between frames and media streams, enabling real-time communication over a websocket to host agent over Awaaz AI's telephony stack over an indian phone number
 
 ```python
 from pipecat_awaazai import AwaazAIFrameSerializer
@@ -70,7 +70,7 @@ See [`example.py`](example.py) for a complete working example including event ha
     uv run python example.py
     ```
 
-The bot will create a websocket that will accept connections from AwaazAI assigned phone number. Once websocket is running, call AwaazAI assigned phone number and it will provide agent over call
+The bot will create a websocket that will accept connections from Awaaz AI assigned phone number. Once websocket is running, call Awaaz AI assigned phone number and it will provide agent over call
 
 ## Compatibility
 
