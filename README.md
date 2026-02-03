@@ -10,6 +10,21 @@ Host your Pipecat agents with [AwaazAI](https://www.awaaz.ai/) telephony stack.
 pip install pipecat-awaazai
 ```
 
+Or via `uv`, update your `pyproject.toml`:
+```toml
+[project]
+name = "your-project"
+version = "0.1.0"
+dependencies = [
+    "pipecat-awaazai",
+    "another-package"
+]
+```
+
+```bash
+uv sync
+```
+
 ## Prerequisites
 
 - Purchase a Phone number from AwaazAI  
