@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2025, Daily
+# Copyright (c) 2026, Awaaz AI
 #
 # SPDX-License-Identifier: BSD 2-Clause License
 #

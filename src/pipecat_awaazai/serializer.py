@@ -1,7 +1,11 @@
-"""Community Integration for AwaazAI.
+#
+# Copyright (c) 2026, Awaaz AI
+#
+# SPDX-License-Identifier: BSD 2-Clause License
+#
+# Pipecat Community Integration for Awaaz AI.
+#
 
-AwaazAI WebSocket frame serializer for Pipecat for hosting agents on telephony
-"""
 
 import base64
 import json
