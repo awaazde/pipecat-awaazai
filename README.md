@@ -61,7 +61,7 @@ See [`example.py`](example.py) for a complete working example including event ha
    ngrok http 7860
    ```
 
-2. Share your ngrok endpoint url (e.g. https://foo.bar.ngrok-free.dev) with us at https://www.awaaz.ai/#Book-Demo; you'll get an email with a demo phone number
+2. Share your ngrok endpoint url (e.g. `https://foo.bar.ngrok-free.dev`) with us by including it in [this form](https://www.awaaz.ai/#Book-Demo); you'll get an email with a demo phone number
 
 3. Install dependencies:
     ```bash
