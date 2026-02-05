@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pipecat-awaazai"
-version = "0.1.0"
+version = "0.1.1"
 description = "AwaazAI WebSocket frame serializer for Pipecat for hosting agents on telephony"
 readme = "README.md"
 license = {text = "MIT"}
