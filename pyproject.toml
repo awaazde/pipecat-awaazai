@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "AwaazAI WebSocket frame serializer for Pipecat for hosting agents on telephony"
 readme = "README.md"
 license = {text = "MIT"}
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [
     {name = "AwaazAI Team"}
 ]
@@ -24,10 +24,9 @@ classifiers = [
 ]
 
 dependencies = [
-    "pipecat-ai[silero,websocket]",
+    "pipecat-ai[websocket,cartesia,openai,silero,deepgram,runner,local-smart-turn-v3]>=0.0.101",
     "pydantic",
     "python-dotenv",
-    "deepgram-sdk<4.0.0",
     "uvicorn[standard]",
 ]
 

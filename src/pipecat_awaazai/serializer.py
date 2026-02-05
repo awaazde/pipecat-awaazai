@@ -16,7 +16,7 @@ from pipecat.frames.frames import (
     KeypadEntry,
     StartInterruptionFrame,
 )
-from pipecat.serializers.base_serializer import FrameSerializer, FrameSerializerType
+from pipecat.serializers.base_serializer import FrameSerializer
 
 
 class AwaazAIFrameSerializer(FrameSerializer):
@@ -28,9 +28,6 @@ class AwaazAIFrameSerializer(FrameSerializer):
         self._stream_sid = stream_sid
         self._params = params
 
-    @property
-    def type(self) -> FrameSerializerType:
-        return FrameSerializerType.TEXT
 
     async def serialize(self, frame: Frame) -> str | bytes | None:
         if isinstance(frame, AudioRawFrame):
