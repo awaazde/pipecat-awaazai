@@ -54,29 +54,38 @@ See [`example.py`](example.py) for a complete working example including event ha
 
 ## Running the Example
 
-1. Install dependencies:
+1. Start ngrok:
+   In a new terminal, start ngrok to tunnel the local server:
+
+   ```sh
+   ngrok http 7860
+   ```
+
+2. Share your ngrok endpoint url (e.g. https://foo.bar.ngrok-free.dev) with us at https://www.awaaz.ai/#Book-Demo; you'll get an email with a demo phone number
+
+3. Install dependencies:
     ```bash
     uv sync
     ```
 
-2. Set up your environment
+4. Set up your environment
 
    ```bash
    cp env.example .env
    ```
 
-3. Run:
+5. Run:
     ```bash
-    uv run python example.py
+    uv run bot.py --transport awaazai --proxy your_ngrok_url
     ```
 
-The bot will create a websocket that will accept connections from Awaaz AI assigned phone number. Once websocket is running, call Awaaz AI assigned phone number and it will provide agent over call
+The bot will create a websocket that will accept connections from Awaaz AI assigned phone number. Once websocket is running, call Awaaz AI assigned phone number and you will be able to interact over the call
 
 ## Compatibility
 
-**Tested with Pipecat v0.0.98**
+**Tested with Pipecat v0.0.101**
 
-- Python 3.9+
+- Python 3.10+
 
 ## License
 
